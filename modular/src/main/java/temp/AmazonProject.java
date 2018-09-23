@@ -3,14 +3,15 @@ package temp;
 import org.openqa.selenium.WebDriver;
 
 import commonLibs.implementation.CommonDriver;
-import commonLibs.implementation.ScreenshotControl;
+import designPattern.AmazonHomePagePOM2Style;
+import designPattern.AmazonPageFactoryStyle;
 
-public class DemoCommonDriver {
+public class AmazonProject {
 
 	public static void main(String[] args) {
 		
 		CommonDriver cmnDriver;
-		String url = "http://qatechhub.com ";
+		String url = "http://amazon.in";
 		WebDriver driver;
 		try {
 			cmnDriver = new CommonDriver("chrome");
@@ -24,13 +25,16 @@ public class DemoCommonDriver {
 			
 			driver = cmnDriver.getDriver();
 			
-			ScreenshotControl camera = new ScreenshotControl(driver);
+			AmazonPageFactoryStyle homepage = new AmazonPageFactoryStyle(driver);
+		
+			//Search Product
 			
-			camera.captureAndSaveScreenshot(System.getProperty("user.dir")+"/screenshots/demo.png");
+			homepage.searchItem("Apple watch", "Watches");	
 			
-			cmnDriver.closeAllBrowsers();
+			homepage.printAllProductsViaScrollDownUsingJS();
 			
-		} catch (Exception e) {
+		}
+		catch(Exception e){
 			e.printStackTrace();
 		}
 
