@@ -6,6 +6,7 @@
       <class name="com.mercuryTravel.tests.HomePageTests">
         <methods>
           <include name="cleanUp"/>
+          <include name="afterMethod"/>
           <include name="setup"/>
           <include name="verifyUserLogin"/>
         </methods>

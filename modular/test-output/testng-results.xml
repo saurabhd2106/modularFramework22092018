@@ -2,20 +2,31 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Mercury Home Page " duration-ms="20246" started-at="2018-09-23T17:50:30Z" finished-at="2018-09-23T17:50:50Z">
+  <suite name="Default suite" duration-ms="24639" started-at="2018-09-29T17:34:52Z" finished-at="2018-09-29T17:35:17Z">
     <groups>
     </groups>
-    <test name="Homepage Test" duration-ms="20246" started-at="2018-09-23T17:50:30Z" finished-at="2018-09-23T17:50:50Z">
+    <test name="Default test" duration-ms="24639" started-at="2018-09-29T17:34:52Z" finished-at="2018-09-29T17:35:17Z">
       <class name="com.mercuryTravel.tests.HomePageTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.mercuryTravel.tests.HomePageTests@523884b2]" name="setup" is-config="true" duration-ms="10782" started-at="2018-09-23T17:50:30Z" finished-at="2018-09-23T17:50:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.mercuryTravel.tests.HomePageTests@6d4b1c02]" name="setup" is-config="true" duration-ms="14538" started-at="2018-09-29T17:34:52Z" finished-at="2018-09-29T17:35:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyTitleOfHomepage()[pri:0, instance:com.mercuryTravel.tests.HomePageTests@523884b2]" name="verifyTitleOfHomepage" duration-ms="55" started-at="2018-09-23T17:50:41Z" finished-at="2018-09-23T17:50:41Z">
+        <test-method status="PASS" signature="verifyTitleOfHomepage()[pri:0, instance:com.mercuryTravel.tests.HomePageTests@6d4b1c02]" name="verifyTitleOfHomepage" duration-ms="51" started-at="2018-09-29T17:35:07Z" finished-at="2018-09-29T17:35:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleOfHomepage -->
-        <test-method status="FAIL" signature="verifyUserLogin()[pri:100, instance:com.mercuryTravel.tests.HomePageTests@523884b2]" name="verifyUserLogin" duration-ms="7800" started-at="2018-09-23T17:50:41Z" finished-at="2018-09-23T17:50:49Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.mercuryTravel.tests.HomePageTests@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="4" started-at="2018-09-29T17:35:07Z" finished-at="2018-09-29T17:35:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitleOfHomepage status=SUCCESS method=HomePageTests.verifyTitleOfHomepage()[pri:0, instance:com.mercuryTravel.tests.HomePageTests@6d4b1c02] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="verifyUserLogin()[pri:100, instance:com.mercuryTravel.tests.HomePageTests@6d4b1c02]" name="verifyUserLogin" duration-ms="7364" started-at="2018-09-29T17:35:07Z" finished-at="2018-09-29T17:35:14Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"partial link text","selector":"Welcome,"}
@@ -26,8 +37,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-R0QK2O8', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\SAURAB~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54356}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: ecf5cf2b109a82cea9a0b453203f3d7f
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\SAURAB~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53985}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 6b9941e2b1e78c3fdf5e880d0d9ff0ba
 *** Element info: {Using=partial link text, value=Welcome,}]]>
             </message>
             <full-stacktrace>
@@ -39,8 +50,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-R0QK2O8', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\SAURAB~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54356}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: ecf5cf2b109a82cea9a0b453203f3d7f
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\SAURAB~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53985}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 6b9941e2b1e78c3fdf5e880d0d9ff0ba
 *** Element info: {Using=partial link text, value=Welcome,}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -60,10 +71,10 @@ at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy9.getText(Unknown Source)
+at com.sun.proxy.$Proxy10.getText(Unknown Source)
 at commonLibs.implementation.ElementControl.getText(ElementControl.java:12)
 at com.mercuryTravel.pages.HomePage.getWelcomeText(HomePage.java:64)
-at com.mercuryTravel.tests.HomePageTests.verifyUserLogin(HomePageTests.java:26)
+at com.mercuryTravel.tests.HomePageTests.verifyUserLogin(HomePageTests.java:33)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -95,11 +106,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLogin -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.mercuryTravel.tests.HomePageTests@523884b2]" name="cleanUp" is-config="true" duration-ms="1540" started-at="2018-09-23T17:50:49Z" finished-at="2018-09-23T17:50:50Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.mercuryTravel.tests.HomePageTests@6d4b1c02]" name="afterMethod" is-config="true" duration-ms="861" started-at="2018-09-29T17:35:14Z" finished-at="2018-09-29T17:35:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLogin status=FAILURE method=HomePageTests.verifyUserLogin()[pri:100, instance:com.mercuryTravel.tests.HomePageTests@6d4b1c02] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.mercuryTravel.tests.HomePageTests@6d4b1c02]" name="cleanUp" is-config="true" duration-ms="1751" started-at="2018-09-29T17:35:15Z" finished-at="2018-09-29T17:35:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
       </class> <!-- com.mercuryTravel.tests.HomePageTests -->
-    </test> <!-- Homepage Test -->
-  </suite> <!-- Mercury Home Page  -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
